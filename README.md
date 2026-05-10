@@ -20,7 +20,7 @@
 
 ## 📌 Overview
 
-**CervixViT** presents **DualPathCervixNet** — a novel hybrid architecture that fuses a CNN backbone with a Vision Transformer (ViT) encoder via a cross-attention mechanism for multi-class cervical cell classification from Pap smear images.
+**CervixViT** presents **DualPathCervixNet** - a novel hybrid architecture that fuses a CNN backbone with a Vision Transformer (ViT) encoder via a cross-attention mechanism for multi-class cervical cell classification from Pap smear images.
 
 Cervical cancer is one of the most preventable cancers when detected early. Automated, high-accuracy classification of cervical cells from Pap smear imagery can assist cytologists and clinicians in screening workflows. This project explores a deep learning approach that combines the local feature extraction strength of CNNs with the global context modelling of transformers.
 
@@ -30,9 +30,9 @@ Cervical cancer is one of the most preventable cancers when detected early. Auto
 
 The model follows a dual-path design:
 
-- **CNN Path** — Extracts fine-grained local texture and morphological features from cell images
-- **Transformer Path** — Captures long-range spatial dependencies and global structural patterns using Vision Transformer blocks
-- **Cross-Attention Fusion** — A custom cross-attention module fuses representations from both paths, allowing each stream to attend to the other's features before final classification
+- **CNN Path** - Extracts fine-grained local texture and morphological features from cell images
+- **Transformer Path** - Captures long-range spatial dependencies and global structural patterns using Vision Transformer blocks
+- **Cross-Attention Fusion** - A custom cross-attention module fuses representations from both paths, allowing each stream to attend to the other's features before final classification
 
 This architecture is designed to overcome the limitations of pure CNNs (limited global context) and pure ViTs (insufficient local inductive bias for small medical datasets).
 
